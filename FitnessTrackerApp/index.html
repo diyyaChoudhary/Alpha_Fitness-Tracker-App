@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fitness Tracker</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🏋️ Fitness Tracker</h1>
+
+<div class="form">
+
+<input
+type="text"
+id="activity"
+placeholder="Activity (Walking, Gym...)">
+
+<input
+type="number"
+id="duration"
+placeholder="Duration (minutes)">
+
+<input
+type="number"
+id="calories"
+placeholder="Calories Burned">
+
+<button onclick="addActivity()">
+Add Activity
+</button>
+
+</div>
+
+<div class="dashboard">
+
+<div class="card">
+<h3>Total Activities</h3>
+<p id="totalActivities">0</p>
+</div>
+
+<div class="card">
+<h3>Total Minutes</h3>
+<p id="totalMinutes">0</p>
+</div>
+
+<div class="card">
+<h3>Total Calories</h3>
+<p id="totalCalories">0</p>
+</div>
+
+</div>
+
+<div class="goal-section">
+
+<h2>🎯 Daily Goal (500 Calories)</h2>
+
+<div class="progress-container">
+    <div id="progressBar"></div>
+</div>
+
+<p id="progressText">0 / 500 Calories</p>
+
+</div>
+
+<h2>Activity Log</h2>
+
+<ul id="activityList">
+
+</ul>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
